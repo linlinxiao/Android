@@ -1,0 +1,328 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fanHuanJinL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!-- 第一行 -->
+    <TextView
+        android:id="@+id/fan1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan1"
+        android:layout_alignBottom="@+id/fan1"
+        android:layout_alignLeft="@+id/fan1"
+        android:layout_marginLeft="41dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan2"
+        android:layout_alignBottom="@+id/fan2"
+        android:layout_alignLeft="@+id/fan2"
+        android:layout_marginLeft="41dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan3"
+        android:layout_alignBottom="@+id/fan3"
+        android:layout_alignLeft="@+id/fan3"
+        android:layout_marginLeft="41dp"
+        android:background="@drawable/fangkuai" />
+    <!-- 第二行 -->
+    <TextView
+        android:id="@+id/fan6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fan1"
+        android:layout_alignLeft="@+id/fan1"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan6"
+        android:layout_alignBottom="@+id/fan6"
+        android:layout_alignLeft="@+id/fan6"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan7"
+        android:layout_alignBottom="@+id/fan7"
+        android:layout_alignLeft="@+id/fan7"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan8"
+        android:layout_alignBottom="@+id/fan8"
+        android:layout_alignLeft="@+id/fan8"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan9"
+        android:layout_alignBottom="@+id/fan9"
+        android:layout_alignLeft="@+id/fan9"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" /> 
+    <!--第三行
+    <TextView
+        android:id="@+id/fan11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fan6"
+        android:layout_alignLeft="@+id/fan6"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan11"
+        android:layout_alignBottom="@+id/fan11"
+        android:layout_alignLeft="@+id/fan11"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan12"
+        android:layout_alignBottom="@+id/fan12"
+        android:layout_alignLeft="@+id/fan12"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan13"
+        android:layout_alignBottom="@+id/fan13"
+        android:layout_alignLeft="@+id/fan13"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan14"
+        android:layout_alignBottom="@+id/fan14"
+        android:layout_alignLeft="@+id/fan14"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    第四行
+     <TextView
+        android:id="@+id/fan16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fan11"
+        android:layout_alignLeft="@+id/fan11"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan16"
+        android:layout_alignBottom="@+id/fan16"
+        android:layout_alignLeft="@+id/fan16"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan17"
+        android:layout_alignBottom="@+id/fan17"
+        android:layout_alignLeft="@+id/fan17"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan18"
+        android:layout_alignBottom="@+id/fan18"
+        android:layout_alignLeft="@+id/fan18"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan19"
+        android:layout_alignBottom="@+id/fan19"
+        android:layout_alignLeft="@+id/fan19"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    第五行
+    <TextView
+        android:id="@+id/fan21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fan16"
+        android:layout_alignLeft="@+id/fan16"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan21"
+        android:layout_alignBottom="@+id/fan21"
+        android:layout_alignLeft="@+id/fan21"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan22"
+        android:layout_alignBottom="@+id/fan22"
+        android:layout_alignLeft="@+id/fan22"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan23"
+        android:layout_alignBottom="@+id/fan23"
+        android:layout_alignLeft="@+id/fan23"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan24"
+        android:layout_alignBottom="@+id/fan24"
+        android:layout_alignLeft="@+id/fan24"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+     第六行
+    <TextView
+        android:id="@+id/fan26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fan21"
+        android:layout_alignLeft="@+id/fan21"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan26"
+        android:layout_alignBottom="@+id/fan26"
+        android:layout_alignLeft="@+id/fan26"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan27"
+        android:layout_alignBottom="@+id/fan27"
+        android:layout_alignLeft="@+id/fan27"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan28"
+        android:layout_alignBottom="@+id/fan28"
+        android:layout_alignLeft="@+id/fan28"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan29"
+        android:layout_alignBottom="@+id/fan29"
+        android:layout_alignLeft="@+id/fan29"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+     
+     第七行
+    <TextView
+        android:id="@+id/fan31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fan26"
+        android:layout_alignLeft="@+id/fan26"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan31"
+        android:layout_alignBottom="@+id/fan31"
+        android:layout_alignLeft="@+id/fan31"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan32"
+        android:layout_alignBottom="@+id/fan32"
+        android:layout_alignLeft="@+id/fan32"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan33"
+        android:layout_alignBottom="@+id/fan33"
+        android:layout_alignLeft="@+id/fan33"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+    <TextView
+        android:id="@+id/fan35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fan34"
+        android:layout_alignBottom="@+id/fan34"
+        android:layout_alignLeft="@+id/fan34"
+        android:layout_marginLeft="61dp"
+        android:background="@drawable/fangkuai" />
+ -->
+
+    <TextView
+        android:id="@+id/fan5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+         android:layout_alignBaseline="@+id/fan4"
+        android:layout_alignBottom="@+id/fan4"
+        android:layout_alignLeft="@+id/fan4"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/fangkuai" />
+
+</RelativeLayout>

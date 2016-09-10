@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/fast_web_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#2299EE"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:onClick="news_back"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/jianjieback" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_centerInParent="true"
+            android:text="学习园地"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:onClick="share"
+            android:clickable="true"
+            android:visibility="visible"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:padding="15dp"
+            android:src="@drawable/share" />
+    </RelativeLayout>
+    
+    <com.baoxiao.FastWebView
+        android:layout_below="@+id/fast_web_title"
+        android:id="@+id/newsConsult"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

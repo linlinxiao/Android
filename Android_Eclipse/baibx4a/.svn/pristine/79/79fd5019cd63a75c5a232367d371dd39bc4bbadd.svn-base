@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/floatBottom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/productZeRen"
+        android:text="产品责任" 
+        style="@style/bottoFloatTV"
+        android:background="@drawable/zyrs_bottom"
+        />
+
+    <TextView
+        android:id="@+id/zeRenMianChu"
+        android:text="责任免除" 
+        style="@style/bottoFloatTV"
+        android:background="@drawable/zyrs_bottom"
+        />
+    <TextView
+        android:id="@+id/canBaoTiShi"
+        android:text="参保提示" 
+        style="@style/bottoFloatTV"
+        android:background="@drawable/zyrs_bottom"
+        />
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        ></LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/floatBottom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/productZeRen"
+        android:text="产品责任"
+        android:background="@drawable/zyrs_bottom" 
+        style="@style/bottoFloatTV"
+        />
+
+    
+
+    <TextView
+        android:id="@+id/zhiChanGuanLi"
+        android:text="资产管理"
+        android:background="@drawable/zyrs_bottom" 
+        style="@style/bottoFloatTV"
+        />
+    <TextView
+        android:id="@+id/liCaiYouShi"
+        android:text="理财优势"
+        android:background="@drawable/zyrs_bottom" 
+        style="@style/bottoFloatTV"
+        />
+    <TextView
+        android:id="@+id/zeRenMianChu"
+        android:text="责任免除"
+        android:background="@drawable/zyrs_bottom" 
+        style="@style/bottoFloatTV"
+        />
+
+    <TextView
+        android:id="@+id/wenTiJieDa"
+        android:text="问题解答"
+        android:background="@drawable/zyrs_bottom" 
+        style="@style/bottoFloatTV"
+        />
+
+
+    <TextView
+        android:id="@+id/canBaoTiShi"
+        android:text="参保提示"
+        android:background="@drawable/zyrs_bottom" 
+        style="@style/bottoFloatTV"
+        />
+
+</LinearLayout>

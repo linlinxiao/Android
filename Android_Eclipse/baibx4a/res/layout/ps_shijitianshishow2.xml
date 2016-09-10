@@ -1,0 +1,1224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F4F7EE"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/leftLinear"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingRight="2dp" >
+
+        <LinearLayout
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/sjts_fanhuanjin1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:orientation="horizontal" >
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="12" 
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    >
+
+               <include layout="@layout/ps_shijitianshi_lj_fan_huan" />
+
+                    <RelativeLayout
+                        android:id="@+id/fanHuanJinL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp" >
+
+                        <!-- 第一行 -->
+
+
+
+                        <TextView
+                            android:id="@+id/fan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/shijitianshi_03"
+                            android:gravity="bottom"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="6dp"
+                            android:textSize="@dimen/ShiJiTianShiFanHuanJinSize"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/fan2"
+                            android:layout_alignBaseline="@+id/fan1"
+                            android:layout_alignBottom="@+id/fan1"
+                            android:layout_alignLeft="@+id/fan1"
+                            style="@style/fangKuai"
+                            android:background="@drawable/shijitianshi_03"
+                            android:textColor="#ffffff"
+                             />
+
+                        <TextView
+                            android:id="@+id/fan3"
+                            android:layout_alignBaseline="@+id/fan2"
+                            android:layout_alignBottom="@+id/fan2"
+                            android:layout_alignLeft="@+id/fan2"
+                            style="@style/fangKuai"
+                            android:background="@drawable/shijitianshi_03"
+                            android:textColor="#ffffff"
+                             />
+
+                        <TextView
+                            android:id="@+id/fan4"
+                            android:layout_alignBaseline="@+id/fan3"
+                            android:layout_alignBottom="@+id/fan3"
+                            android:layout_alignLeft="@+id/fan3"
+                            style="@style/fangKuai"
+                            android:background="@drawable/shijitianshi_03"
+                            android:textColor="#ffffff"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan5"
+                            android:layout_alignBaseline="@+id/fan4"
+                            android:layout_alignBottom="@+id/fan4"
+                            android:layout_alignLeft="@+id/fan4"
+                            style="@style/fangKuai"
+                            android:background="@drawable/shijitianshi_03"
+                            android:textColor="#ffffff"
+                             />
+                        <!-- 第二行 -->
+
+                        <TextView
+                            android:id="@+id/fan6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignBottom="@+id/fan1"
+                            android:layout_alignLeft="@+id/fan1"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/shijitianshi_03"
+                            android:gravity="bottom"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="6dp"
+                            android:textSize="@dimen/ShiJiTianShiFanHuanJinSize"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/fan7"
+                            android:layout_alignBaseline="@+id/fan6"
+                            android:layout_alignBottom="@+id/fan6"
+                            android:layout_alignLeft="@+id/fan6"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                             />
+
+                        <TextView
+                            android:id="@+id/fan8"
+                            android:layout_alignBaseline="@+id/fan7"
+                            android:layout_alignBottom="@+id/fan7"
+                            android:layout_alignLeft="@+id/fan7"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan9"
+                            android:layout_alignBaseline="@+id/fan8"
+                            android:layout_alignBottom="@+id/fan8"
+                            android:layout_alignLeft="@+id/fan8"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan10"
+                            android:layout_alignBaseline="@+id/fan9"
+                            android:layout_alignBottom="@+id/fan9"
+                            android:layout_alignLeft="@+id/fan9"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+                        <!-- 第三行 -->
+
+                        <TextView
+                            android:id="@+id/fan11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignBottom="@+id/fan6"
+                            android:layout_alignLeft="@+id/fan6"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/shijitianshi_03"
+                            android:gravity="bottom"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="6dp"
+                            android:textSize="@dimen/ShiJiTianShiFanHuanJinSize"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/fan12"
+                            android:layout_alignBaseline="@+id/fan11"
+                            android:layout_alignBottom="@+id/fan11"
+                            android:layout_alignLeft="@+id/fan11"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan13"
+                            android:layout_alignBaseline="@+id/fan12"
+                            android:layout_alignBottom="@+id/fan12"
+                            android:layout_alignLeft="@+id/fan12"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan14"
+                            android:layout_alignBaseline="@+id/fan13"
+                            android:layout_alignBottom="@+id/fan13"
+                            android:layout_alignLeft="@+id/fan13"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan15"
+                            android:layout_alignBaseline="@+id/fan14"
+                            android:layout_alignBottom="@+id/fan14"
+                            android:layout_alignLeft="@+id/fan14"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+                        <!-- 第四行 -->
+
+                        <TextView
+                            android:id="@+id/fan16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignBottom="@+id/fan11"
+                            android:layout_alignLeft="@+id/fan11"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/shijitianshi_03"
+                            android:gravity="bottom"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="6dp"
+                            android:textSize="@dimen/ShiJiTianShiFanHuanJinSize"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/fan17"
+                            android:layout_alignBaseline="@+id/fan16"
+                            android:layout_alignBottom="@+id/fan16"
+                            android:layout_alignLeft="@+id/fan16"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan18"
+                            android:layout_alignBaseline="@+id/fan17"
+                            android:layout_alignBottom="@+id/fan17"
+                            android:layout_alignLeft="@+id/fan17"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan19"
+                            android:layout_alignBaseline="@+id/fan18"
+                            android:layout_alignBottom="@+id/fan18"
+                            android:layout_alignLeft="@+id/fan18"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan20"
+                            android:layout_alignBaseline="@+id/fan19"
+                            android:layout_alignBottom="@+id/fan19"
+                            android:layout_alignLeft="@+id/fan19"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+                        <!-- 第五行 -->
+
+                        <TextView
+                            android:id="@+id/fan21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignBottom="@+id/fan16"
+                            android:layout_alignLeft="@+id/fan16"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/shijitianshi_03"
+                            android:gravity="bottom"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="6dp"
+                            android:textSize="@dimen/ShiJiTianShiFanHuanJinSize"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/fan22"
+                            android:layout_alignBaseline="@+id/fan21"
+                            android:layout_alignBottom="@+id/fan21"
+                            android:layout_alignLeft="@+id/fan21"
+                            style="@style/fangKuai"
+                            android:background="@drawable/shijitianshi_03"
+                            android:textColor="#ffffff"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan23"
+                            android:layout_alignBaseline="@+id/fan22"
+                            android:layout_alignBottom="@+id/fan22"
+                            android:layout_alignLeft="@+id/fan22"
+                            style="@style/fangKuai"
+                            android:background="@drawable/shijitianshi_03"
+                            android:textColor="#ffffff"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan24"
+                            android:layout_alignBaseline="@+id/fan23"
+                            android:layout_alignBottom="@+id/fan23"
+                            android:layout_alignLeft="@+id/fan23"
+                            style="@style/fangKuai"
+                            android:background="@drawable/shijitianshi_03"
+                            android:textColor="#ffffff"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan25"
+                            android:layout_alignBaseline="@+id/fan24"
+                            android:layout_alignBottom="@+id/fan24"
+                            android:layout_alignLeft="@+id/fan24"
+                            style="@style/fangKuai"
+                            android:background="@drawable/shijitianshi_03"
+                            android:textColor="#ffffff"
+                            />
+                        <!-- 第六行 -->
+
+                        <TextView
+                            android:id="@+id/fan26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignBottom="@+id/fan21"
+                            android:layout_alignLeft="@+id/fan21"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/shijitianshi_03"
+                            android:gravity="bottom"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="6dp"
+                            android:textSize="@dimen/ShiJiTianShiFanHuanJinSize"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/fan27"
+                            android:layout_alignBaseline="@+id/fan26"
+                            android:layout_alignBottom="@+id/fan26"
+                            android:layout_alignLeft="@+id/fan26"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan28"
+                            android:layout_alignBaseline="@+id/fan27"
+                            android:layout_alignBottom="@+id/fan27"
+                            android:layout_alignLeft="@+id/fan27"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan29"
+                            android:layout_alignBaseline="@+id/fan28"
+                            android:layout_alignBottom="@+id/fan28"
+                            android:layout_alignLeft="@+id/fan28"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan30"
+                            android:layout_alignBaseline="@+id/fan29"
+                            android:layout_alignBottom="@+id/fan29"
+                            android:layout_alignLeft="@+id/fan29"
+                            style="@style/fangKuai"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/shijitianshi_03"
+                            />
+
+                        <!-- 第七行 -->
+
+                        <TextView
+                            android:id="@+id/fan31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignBottom="@+id/fan26"
+                            android:layout_alignLeft="@+id/fan26"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/shijitianshi_03"
+                            android:gravity="bottom"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="6dp"
+                            android:textSize="@dimen/ShiJiTianShiFanHuanJinSize"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:id="@+id/fan32"
+                            android:layout_alignBaseline="@+id/fan31"
+                            android:layout_alignBottom="@+id/fan31"
+                            android:layout_alignLeft="@+id/fan31"
+                            style="@style/fangKuai"
+                            android:background="@drawable/shijitianshi_03"
+                            android:textColor="#ffffff"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan33"
+                            android:layout_alignBaseline="@+id/fan32"
+                            android:layout_alignBottom="@+id/fan32"
+                            android:layout_alignLeft="@+id/fan32"
+                            style="@style/fangKuai"
+                            android:background="@drawable/shijitianshi_03"
+                            android:textColor="#ffffff"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan34"
+                            android:layout_alignBaseline="@+id/fan33"
+                            android:layout_alignBottom="@+id/fan33"
+                            android:layout_alignLeft="@+id/fan33"
+                            style="@style/fangKuai"
+                            android:background="@drawable/shijitianshi_03"
+                            android:textColor="#ffffff"
+                            />
+
+                        <TextView
+                            android:id="@+id/fan35"
+                            android:layout_alignBaseline="@+id/fan34"
+                            android:layout_alignBottom="@+id/fan34"
+                            android:layout_alignLeft="@+id/fan34"
+                            style="@style/fangKuai"
+                            android:background="@drawable/shijitianshi_03"
+                            android:textColor="#ffffff"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+                </LinearLayout> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zhongShenFanHuan2_1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7" 
+                android:layout_marginRight="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/ZhongShenFanHuan2_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:text="每3年领取一次，领取额度高达保额的12%"
+                    android:textSize="8sp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zhongShenFanHuan1_1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:orientation="horizontal"
+                android:background="@drawable/sjts_blue" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:gravity="right|center_vertical"
+                    android:text="生存返还金"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/FanHuanJinBig" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="（终身领取  高额返还）"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/FanHuanJinSmall" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/sjts_fanhuanjin3"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/tiQianYangLao1_3"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:background="@drawable/sjts_zise" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="right|center_vertical"
+                    android:text="人寿保险金"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/FanHuanJinBig"
+                    android:layout_marginLeft="17dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:text="（本金永在，保证还本）"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/FanHuanJinSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/renShouBaoXianJin"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                >
+
+                <!--生命价值保障金  -->
+                <LinearLayout
+                    android:id="@+id/renShouBaoXianJinLinear1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/renShouBaoXianJinLinear2"
+                        android:layout_width="150dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="6"
+                        android:background="@drawable/sjts_shengmingbzhangjin"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginTop="4dp"
+                         >
+
+                        <!-- <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="生命价值保障金"
+                                android:textColor="#FF0000"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/renShouBaoXianJinLinear1_Text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="9万元"
+                                android:textColor="#4597A0"
+                                android:textSize="12sp" />
+                        </LinearLayout> -->
+
+                        <!-- <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textColor="#008000"
+                            android:textSize="12sp" />
+ -->
+                        <!-- <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="（ 终身保障，百年后可全额留给后代)"
+                            android:textSize="7sp" /> -->
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/renShouBaoXianJinText_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="(18岁前，按所交合计保费提供保障)"
+                        android:textColor="#000000"
+                        android:textSize="8sp"
+                         />
+                </LinearLayout>
+
+                <!-- 身故总利益 -->
+                <LinearLayout
+                    android:id="@+id/renShouBaoXianJinLinear3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sjts_sg"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+
+                            <TextView
+                                android:id="@+id/shenGuBaoZhangJin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="22dp"
+                                android:text="3B万元"
+                                android:textColor="#004ff0"
+                                android:textSize="15sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 生存总利益 -->
+                <LinearLayout
+                    android:id="@+id/renShouBaoXianJinLinear4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/sjts_renshou"
+                    android:visibility="gone"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <!-- <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="生存总利益"
+                            android:textColor="#FF0000"
+                            android:textSize="14sp" />
+                    </LinearLayout> -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical"
+                            android:paddingTop="5dp" >
+
+                            <!-- <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/shehngcunBaoZhangJin"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="对应现金价值"
+                                android:textColor="#4597A0"
+                                android:textSize="10sp" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2" >
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="（ 现金价值最高时，数额接近3倍保额保额)"
+                                android:textSize="6sp" /> -->
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            >
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tiQianYangLao7_3"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="23dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_marginBottom="23dp" >
+                <TextView 
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="其它权益：1，在保险期间可以申请保单贷款，解决资金周转问题;2、在交费期\n
+内，发生重疾，可以豁免剩余年度保费，分红金、返还金等利益不受影响;\n3，还有更多权益请参看保险条款和产品计划书。"
+					android:textSize="6.5sp"
+					android:textColor="#000000"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/RightLinear"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="2dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/sjts_fanhuanjin2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/baoDanFenHongJinLinear1"
+                android:layout_width="160dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="6.8"
+                android:background="@drawable/sjts_fenhongjin"
+                android:orientation="vertical" 
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zhongShenFenHongLinear"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:visibility="gone"
+                 >
+
+                <LinearLayout
+                    android:id="@+id/hongLiBaoXianJinE_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sjts_honglititle"
+                    android:orientation="vertical"
+                    >
+
+                        <TextView
+                            android:id="@+id/levelHongLi"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.3"
+                            android:gravity="center"
+                            android:text="保单累积分红账户(中等计算)"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hongLiBaoXianJinELayout1_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/zyrs_baodanleiji"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="80岁" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="20dp"
+                        android:text="时累积红利："
+                        android:textSize="12sp" />
+            <TextView
+                android:id="@+id/hongLiBaoXianJinE1_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#FF0000" />
+                    
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="元" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hongLiBaoXianJinELayout2_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/zyrs_baodanleiji"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="60岁" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="20dp"
+                        android:text="时累积红利："
+                        android:textSize="12sp" />
+            <TextView
+                android:id="@+id/hongLiBaoXianJinE2_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#FF0000" />
+                    
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="元" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hongLiBaoXianJinELayout3_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/zyrs_baodanleiji"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.9"
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:text="35岁" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        android:text="时累积红利：" />
+            <TextView
+                android:id="@+id/hongLiBaoXianJinE3_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#FF0000" />
+                    
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="元" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hongLiBaoXianJinELayout4_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/zyrs_baodanleiji"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="25岁" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="20dp"
+                        android:text="时累积红利："
+                        android:textSize="12sp"
+                         />
+            <TextView
+                android:id="@+id/hongLiBaoXianJinE4_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#FF0000" />
+                    
+                    
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="元" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hongLiBaoXianJinELayout5_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/zyrs_baodanleiji"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.9"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="18岁" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="20dp"
+                        android:text="时累积红利："
+                        android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/hongLiBaoXianJinE5_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#FF0000" />
+                    
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="元" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hongLiBaoXianJinE6_2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="分红金可以领，也可以存在保险公司复利增值"
+                    android:textSize="8sp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zhongShenFenHong1_2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:background="@drawable/sjts_zise" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3.2"
+                    android:gravity="right|center_vertical"
+                    android:text="保单分红金"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="33dp"
+                    android:textSize="@dimen/FanHuanJinBig" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="（每年分红，保单增值）"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/FanHuanJinSmall" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/sjts_fanhuanjin4"
+            android:orientation="vertical"
+             >
+
+            <LinearLayout
+                android:id="@+id/zhongShenBaoZhang1_4"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/sjts_blue" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:gravity="right|center_vertical"
+                    android:text="健康关爱金"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="39dp"
+                    android:textSize="@dimen/FanHuanJinBig" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="（终身保障，健康无忧）"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/FanHuanJinSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/jianKangGuanAiJinRetative1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1.5"
+                        >
+                        <TextView
+                            android:id="@+id/jianKangGuanAiJinText1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="大\n病\n靠\n商\n保"
+                            android:textColor="#000000"
+                            android:textSize="10dp"
+                            android:textStyle="bold" 
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="5dp" 
+                            />
+                        
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="小\n病\n靠\n社\n保"
+                            android:textColor="#000000"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/zhongShenBaoZhang2_4"
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="4"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/sjts_zhongjibaozhangjin"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/zhongShenZhongJiBaoZhang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="C万元"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:textStyle="bold" 
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.5" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/jianKangGuanAiJinLinear1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+                    <TextView 
+                        android:layout_marginLeft="46dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="特别声明：本界面内容演示主要是为便于客户了解产品的基本利益，分红是不确定性，\n具体分红数额、保险产品的保障权益以本公司实际经营状况和保险条款为准，\n特提醒客户注意!
+"
+                        android:textColor="#000000"
+                        android:textSize="6.5sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

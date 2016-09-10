@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#2299EE"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/studyBack"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/jianjieback" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="6.5"
+            android:gravity="center"
+            android:text="礼品商城"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/shouHuXingMenu"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" 
+            android:src="@drawable/mine_agentset"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+    <WebView 
+        android:id="@+id/studyVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        />
+
+</LinearLayout>

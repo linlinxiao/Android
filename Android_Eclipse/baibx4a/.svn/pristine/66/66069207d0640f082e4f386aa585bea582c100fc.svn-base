@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/floatBottom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/juCaiBaoTeSe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/zhrs_button"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="聚财宝特色" 
+        />
+
+    <TextView
+        android:id="@+id/zhiChanGuanLi"
+        android:text="资产管理" 
+        style="@style/bottoFloatTV"
+        android:background="@drawable/zhrs_button"
+        />
+    <TextView
+        android:id="@+id/liCaiYouShi"
+        android:text="理财优势" 
+        style="@style/bottoFloatTV"
+        android:background="@drawable/zhrs_button"
+        />
+    <TextView
+        android:id="@+id/wenTiJieDa"
+        android:text="问题解答" 
+        style="@style/bottoFloatTV"
+        android:background="@drawable/zhrs_button"
+        />
+
+    <TextView
+        android:id="@+id/productZeRen"
+        android:text="产品责任" 
+        style="@style/bottoFloatTV"
+        android:background="@drawable/zhrs_button"
+        />
+
+
+    <TextView
+        android:id="@+id/canBaoTiShi"
+        android:text="参保提示" 
+        style="@style/bottoFloatTV"
+        android:background="@drawable/zhrs_button"
+        />
+
+</LinearLayout>

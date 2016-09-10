@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#2299EE"
+        android:orientation="horizontal" >
+        
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="群组"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="12"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sousuo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#919191"
+	        android:hint="搜索"
+	        android:textColorHint="#ffffff"
+	        android:textSize="15sp"	
+	        android:gravity="center"
+            android:ems="10" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical" >
+            
+            <LinearLayout 
+                android:id="@+id/llMyClient"
+                android:layout_width="match_parent"
+	            android:layout_height="30dp"
+	            android:orientation="horizontal"
+	            android:layout_marginBottom="7dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/group_kehu" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="我的客户群" />
+				
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:orientation="vertical"
+	            android:background="#C2C2C2"
+                ></LinearLayout>
+            
+             <LinearLayout 
+                android:id="@+id/llMyZengyuan"
+                android:layout_width="match_parent"
+	            android:layout_height="30dp"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginBottom="7dp"
+	            android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/group_zengyuan" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="我的增员群" />
+				
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:orientation="vertical"
+	            android:background="#C2C2C2"
+                ></LinearLayout>
+            
+             <LinearLayout 
+                android:id="@+id/llMyPeer"
+                android:layout_width="match_parent"
+	            android:layout_height="30dp"
+	            android:orientation="horizontal"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginBottom="7dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/group_tonghang" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="我的同行群" />
+				
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:orientation="vertical"
+	            android:background="#C2C2C2"
+                ></LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>

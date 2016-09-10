@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/floatTop"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/zyrs_topfloat"
+    android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="两者相加意外保障"
+            android:textSize="7sp" 
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/pinganfutopfloat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="最高可达B+2D万元"
+            android:textSize="7sp" 
+            android:textColor="#ffffff"/>
+
+</LinearLayout>

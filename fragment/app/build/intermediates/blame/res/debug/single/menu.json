@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/linlin/AndroidStudioProjects/fragment/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Users/linlin/AndroidStudioProjects/fragment/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/Users/linlin/AndroidStudioProjects/fragment/app/build/intermediates/res/merged/debug/menu/communicate.xml",
+        "source": "/Users/linlin/AndroidStudioProjects/fragment/app/src/main/res/menu/communicate.xml"
+    }
+]

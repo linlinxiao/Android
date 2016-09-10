@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox android:textSize="12sp"
+            android:id="@+id/cb_mycard_right_row12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="IQA荣誉编辑完成-12"
+            android:textColor="#000000" />
+
+        <CheckBox android:textSize="12sp"
+            android:id="@+id/cb_mycard_left_row12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="没有该项荣誉"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mycard_row12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mycard_back" >
+
+        <TextView
+            android:id="@+id/tv_p12_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="130dp"
+            android:clickable="true"
+            android:onClick="p12_t1"
+            android:text="可编辑"
+            android:textColor="#ff8d09"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_p12_t2"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_mycard_p12_v1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            android:onClick="p12_t2"
+            android:text="可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_mycard_p12_v1"
+            android:layout_width="300dp"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/mycard_p12_v1"
+            android:clickable="true"
+            android:onClick="p12_v1" />
+    </RelativeLayout>
+</LinearLayout>

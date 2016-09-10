@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">scrollView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="content">在视频播放方面，可以使用MPMoviePlayerController，但是如果需要高度自定义视频播放的时候，就需要使用AVPlayer，AVPlayer属于AVFoundation框架，AVPlayer自己不能播放视频，如果想播放视频，需要创建一个AVPlayerLayer，继承于CALayer, 然后将AVPlayerLayer添加到view的layer属性上。
+
+AVPlayer中涉及到的类有：
+
+（1）AVAsset：是一个抽象类，主要用于获取多媒体信息，不能直接使用。
+
+（2）AVURLAsset：AVAsset的子类，可以根据一个URL路径创建一个包含媒体信息的AVURLAsset对象。
+
+（3）AVPlayerItem：一个媒体资源管理对象，管理者视频的一些基本信息和状态，一个AVPlayerItem对应着一个视频资源。
+
+有两个功能：播放和暂停，对应着AVPlayer的两个方法，pause和play。AVPlayer
+ 不能判断当前视频是否在播放，可以通过视频播放的速度来判断视频的播放状态：输赢rate如果为0表明是停止，为1表明视频正常播放。
+
+1：如果想要获得视频的播放进度：播放网络视频的时候，需要获得视频的加载和缓冲信息，AVPlayer中的属性currentItem表示当前播放的视频对象，属于AVPlayerItem类型的，可以通过KVO来监控currentItem的
+
+status 和 loadedTimeRanges属性来获得。
+
+status属性为AVPlayerStatusReadyToPlay说明正在播放，处于这个状态才能获得视频时长等信息
+
+loadedTimeRanges属性改变时可以获得本次缓冲加载的视频范围（起始时间和本次加载时长），可以获得实时的缓冲情况
+
+
+2：获取播放进度：通过AVPlayer的获得播发进度，-
+ (id)addPeriodicTimeObserverForInterval:(CMTime)interval queue:(dispatch_queue_t)queue usingBlock:(void (^)(CMTime time))，此代理方法会在设定的时间间隔，定时更新播放进度，通过block的参数time获得
+
+3: 获得视频播放结束，播放完成之后会有通知：AVPlayerItemDidPlayToEndTimeNotification，可以监听此通知
+
+AVPlayer虽然播放视频很强大，但是支持的视频编码格式只有：H.264、MPEG-4，扩展名（压缩格式）：.mp4、.mov、.m4v、.m2v、.3gp、.3g2等。如果想支持更多的视频编码格式，可以使用使用第三方的框架，常用的视频编码和解码框架有VLC和ffmpeg。</string>
+
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">spinner</string>
+    <string name="hello_world">您选择的城市是</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

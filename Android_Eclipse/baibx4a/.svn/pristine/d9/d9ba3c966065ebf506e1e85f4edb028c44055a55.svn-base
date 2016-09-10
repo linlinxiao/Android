@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#2299EE"
+        android:orientation="horizontal" >
+
+       <!--  <ImageView
+            android:id="@+id/agentBack"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/baoxianproductback" />
+ -->
+        
+        <ImageView
+            android:id="@+id/agentBack"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/jianjieback" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="6.5"
+            android:gravity="center"
+            android:text="我的保险代理人"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+       <ImageView
+            android:id="@+id/agentSet"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/mine_agentset" />
+    </LinearLayout>
+    
+
+    <WebView 
+        android:id="@+id/studyVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        />
+
+</LinearLayout>

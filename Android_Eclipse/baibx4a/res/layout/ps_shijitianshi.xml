@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#E5E5E5" >
+
+    <LinearLayout
+        android:id="@+id/title1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#2299EE"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/shiJiTianShiJianJieBack"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/jianjieback" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:text="世纪天使简介"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/shouHuXingMenu"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:background="#E5E5E5"
+        >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/sjts_jianjie" />
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FFFFFF"
+            >
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="世纪天使产品视频"
+                android:textColor="#FC2627"
+                android:textSize="15sp"
+                android:background="#E5E5E5"
+                />
+	        <WebView
+	            android:id="@+id/shiJiTianShiVideo"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="5"
+	            android:scrollbars="none"
+	            />
+        </LinearLayout>
+
+    </LinearLayout>
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <TextView
+            android:id="@+id/baoXianLiNian"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="保险理念 "
+            android:textColor="#FFFFFF"
+            android:background="@drawable/hushenfu_jianjiebutton"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            />
+        <TextView 
+            android:id="@+id/touBaoGuiZe"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:text="投保规则"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/hushenfu_jianjiebutton"
+            android:gravity="center"
+            />
+        <TextView 
+            android:id="@+id/chanPinTeSe"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:text="产品特色"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/hushenfu_jianjiebutton"
+            android:gravity="center"
+            />
+        <TextView 
+            android:id="@+id/sheJiJiHuaShu"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="设计计划书"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/hushenfu_jianjiebutton"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>

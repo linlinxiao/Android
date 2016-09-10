@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox android:textSize="12sp"
+            android:id="@+id/cb_mycard_right_row4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="荣誉业务员等级编辑完成-4"
+            android:textColor="#000000" />
+
+        <CheckBox android:textSize="12sp"
+            android:id="@+id/cb_mycard_left_row4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="没有该项荣誉"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mycard_row4"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:background="@drawable/mycard_back" >
+
+        <ImageView
+            android:id="@+id/iv_mycard_p4_v1"
+            android:layout_width="150dp"
+            android:layout_height="211dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/mycard_p3_v1"
+            android:clickable="true"
+            android:onClick="p4_v1" />
+
+        <ImageView
+            android:id="@+id/iv_mycard_p4_v2"
+            android:layout_width="156dp"
+            android:layout_height="82dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/iv_mycard_p4_v1"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/mycard_p3_v2"
+            android:clickable="true"
+            android:onClick="p4_v2" />
+
+        <ImageView
+            android:id="@+id/iv_mycard_p4_v3"
+            android:layout_width="156dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/iv_mycard_p4_v2"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mycard_p3_v3"
+            android:clickable="true"
+            android:onClick="p4_v3" />
+
+        <TextView
+            android:id="@+id/tv_p4_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:clickable="true"
+            android:onClick="p4_t1"
+            android:text="可编辑"
+            android:textColor="#fff700"
+            android:textSize="22sp" />
+    </RelativeLayout>
+</LinearLayout>

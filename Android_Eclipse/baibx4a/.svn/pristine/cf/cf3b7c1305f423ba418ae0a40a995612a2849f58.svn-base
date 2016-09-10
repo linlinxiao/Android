@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baoxiao"
+    android:versionCode="169"
+    android:versionName="1.3.69" >
+
+    <uses-sdk
+        android:minSdkVersion="16"/>
+    <permission
+        android:name="com.baoxiao.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.baoxiao.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+   
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGESE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bbx_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.baoxiao.MyApplication">
+
+        <!-- 使用测试单元库 -->
+        <uses-library android:name="android.test.runner" />
+
+        <!--
+            android:name="com.baoxiao.MainActivity"
+            android:na
+            me="com.baoxiao.test.activity.webview.Flip"
+            android:name="com.baoxiao.activity.productshow.ProductShowActivity"
+            android:name="com.baoxiao.activity.productshow.shouhux.ShouHuXBaoFeiA"
+            android:name="com.baoxiao.activity.productshow.shouhux.ShouHuXA"
+            android:name="com.baoxiao.test.weight.testWeight"
+            android:name="com.baoxiao.test.activity.testmian.TestMain"
+        -->
+        <activity
+            android:name=".DaoYeA"
+            android:icon="@drawable/logo"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- begin，开始选择几面 -->
+        <activity android:name=".test.activity.testmian.TestOne" />
+        <activity android:name=".test.activity.testmian.TestTwo" />
+        <activity android:name=".test.activity.testmian.TestThree" />
+        <activity android:name=".test.activity.testmian.TestFloating" />
+        <activity android:name=".test.weight.testTextView" />
+
+        <!-- webview显示网页 -->
+        <activity android:name=".test.activity.webview.MainActivity" >
+        </activity>
+        <activity android:name=".test.activity.webview.MainActivity2" >
+        </activity>
+        <activity android:name=".test.activity.webview.FlipTwo" >
+        </activity>
+        <activity android:name=".test.activity.webview.Flip" >
+        </activity>
+
+        <!-- 引导，登录，注册,激活界面 -->
+        <!--
+             <activity android:name="com.baoxiao.DaoYeA" 
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            >
+        -->
+        <!-- </activity> -->
+        <activity android:name=".WelcomeA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:name=".LoginA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:name=".RegisterA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:name=".JiHuoA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+
+        <!-- 收藏搜索 -->
+        <activity
+            android:name=".activity.search.SearchA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <!-- mainActivity 首页和其他四个页面 -->
+        <activity android:name=".MainActivityA" android:screenOrientation="portrait" />
+        <activity android:name=".activity.homepage.HomePageA" />
+        <activity android:name=".activity.homepage.GroupA" />
+        <activity android:name=".activity.homepage.MineA" />
+        <activity android:name=".activity.homepage.WeiHuA" />
+        
+        <activity android:name=".activity.invitation.Invitation2A" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name=".activity.invitation.PreviewA" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name=".activity.invitation.SelectPicActivity" 
+            android:screenOrientation="portrait"
+			android:theme="@style/DialogStyleBottom"/>
+        <activity android:name=".activity.invitation.InvitationListA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name=".activity.invitation.InvitationWinePartyA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name=".activity.invitation.InvitationWinePreViewA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name=".activity.invitation.InvitationFinanCialA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name=".activity.invitation.InvitationVisitLetteA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        
+        <!-- 走进平安 -->
+        <activity
+            android:name=".activity.zoujinpingan.ComingPingAnA2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 招聘精英 -->
+        <activity
+            android:name=".activity.zhaopinjingying.ZhaoPinJingYingA2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 学习乐园 -->
+        <activity
+            android:name=".activity.study.StudyA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 学习乐园 -->
+        <activity
+            android:name="com.baoxiao.activity.study.StudyA2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.baoxiao.activity.zhaopinjingying.ZhaopinWeb"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        
+        <activity
+            android:name=".activity.study.StudyWebViewA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.study.StudyVideoA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.study.AddMemberA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.study.StudyVideoInfoA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.study.DocumentInfoA"
+            android:screenOrientation="portrait" />
+        <!-- 新闻 -->
+        <activity
+            android:name=".activity.message.NewsConsultA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.message.ArticleInfoA"
+            android:screenOrientation="portrait" />
+        <!-- 我的 -->
+        <!-- 我的名片 -->
+        <activity
+            android:name=".activity.mine.MyCardA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.mine.MyCardA2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.mine.MyCardEditA3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.mine.MyCardEditA2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.mine.MyCardEditA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 我的账号 -->
+        <activity
+            android:name=".activity.mine.MyAccountA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.mine.GoldGongLueA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.mine.ShareA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.mine.HuDongA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mine.MyCollectionA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.mine.MyAgentA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.mine.MyAgentSetA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <!-- 维护 -->
+        <activity
+            android:name=".activity.weihu.SystemUpdateA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weihu.DataBackUpA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.weihu.AboutA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.weihu.ModifyPwdA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <!-- 礼品商城 -->
+        <activity
+            android:name=".activity.shop.ShopA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.ShopMenuA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.shop.MyOrderA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.shop.MyShopCartA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.FreeGoldA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.MyOrderInfoA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <!-- 名片 -->
+
+        <activity
+            android:name=".activity.userproduct.EditUserInfoA"
+            android:screenOrientation="portrait" />
+
+        <!-- 保险产品的产品演示 -->
+        <activity
+            android:name=".activity.productshow.BaoXianProductA"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 守护星产品演示界面 -->
+        <activity android:name=".activity.productshow.shouhux.ShouHuXA" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.shouhux.ShouHuXPlanA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activity.productshow.shouhux.ShouHuXBaoFeiA" >
+        </activity>
+        <activity android:name=".activity.productshow.shouhux.ShouHuXShowA" >
+        </activity>
+        <activity android:name=".activity.productshow.shouhux.ShouHuXGuanNianDR" >
+        </activity>
+        <!-- 下部悬浮框 -->
+        <activity
+            android:name=".activity.productshow.shouhux.ProductTeSeA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.productshow.shouhux.ProductZeRenA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.productshow.shouhux.ProductZiChanGLA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.productshow.shouhux.ProductLiCaiYSA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.productshow.shouhux.ProductWenTiJDA"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.productshow.shouhux.ProductFuJiaBXA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.productshow.shouhux.ProductCanBaoTSA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.productshow.shouhux.ProductTiaoKuanA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.productshow.shouhux.ShouHuXTiaoKuanA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <!-- 护身福产品演示界面 -->
+        <activity
+            android:name=".activity.productshow.hushenfu.HuShenFuA"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.hushenfu.HuShenFuPlanA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.hushenfu.HuShenFuBaoFeiA"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.hushenfu.HuShenFuTiaoKuanA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.hushenfu.HuShenFuShowA"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <!-- 世纪天使产品演示界面 -->
+        <activity android:name=".activity.productshow.shijitianshi.ShiJiTSA" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.shijitianshi.ShiJiTSPlanA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.shijitianshi.ShiJiTSBaoFeiA"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.shijitianshi.ShiJiTSShowA"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.shijitianshi.ShiJiTianShiTiaoKuanA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity android:name=".activity.productshow.WebViewA" >
+        </activity>
+        <activity android:name=".activity.productshow.TiaoKuanWebViewA" >
+        </activity>
+
+        <!-- 鑫利产品演示界面 -->
+        <activity android:name=".activity.productshow.xinli.XinLiA" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.xinli.XinLiPlanA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.xinli.XinLiBaoFeiA"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.xinli.XinLiShowA"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.xinli.XinLiTiaoKuanA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <!-- 平安福产品演示界面 -->
+        <activity
+            android:name=".activity.productshow.pinganfu.PingAnFuA"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.pinganfu.PingAnFuPlanA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.pinganfu.PingAnFuPlanA2"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.pinganfu.PingAnFuBaoFeiA"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.pinganfu.PingAnFuShowA"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.pinganfu.PingAnFuShowA2"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.pinganfu.PingAnFuTiaoKuanA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".WebShowA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".WebShowA2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".WebShowNoshare"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        
+        <!-- 少儿平安福产品演示界面 -->
+        <activity
+            android:name=".activity.productshow.childrenPeace.ChildrenPingAnFuA"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.childrenPeace.ChildrenPingAnFuPlanA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.childrenPeace.ChildrenPingAnFuBaoFeiA"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.childrenPeace.ChildrenPingAnFuShowA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.childrenPeace.ChildrenPingAnFuTiaoKuanA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <!-- 鑫盛产品演示界面啊 -->
+        <activity
+            android:name=".activity.productshow.xinsheng.XinShengA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.xinsheng.XinShengPlanA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.xinsheng.XinShengBaoFeiA"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activity.productshow.xinsheng.XinShengShowA"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.xinsheng.XinShengTiaoKuanA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <!-- 鑫详产品演示界面 -->
+        <activity
+            android:name=".activity.productshow.xinxiang.XinXiangA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.xinxiang.XinXiangPlanA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.xinxiang.XinXiangBaoFeiA"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.xinxiang.XinXiangShowA"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.xinxiang.XinXiangTiaoKuanA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <!-- 赢聚一生产品演示界面 -->
+        <activity
+            android:name=".activity.productshow.yingjuys.YingJuYiShengA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.yingjuys.YingJuYSPlanA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.yingjuys.YingJuYSBaoFeiA"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.yingjuys.YingJuYSShowA"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.yingjuys.YingJuYiShengTiaoKuanA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <!-- 尊御人生产品演示界面 -->
+        <activity
+            android:name=".activity.productshow.zunyurensheng.ZunYuRenShengA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.zunyurensheng.ZunYuRenShengPlanA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.zunyurensheng.ZunYuRSShowA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 智能星产品演示界面 -->
+        <activity
+            android:name=".activity.productshow.zhinengxing.ZhiNengXingA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.zhinengxing.ZhiNengXingPlanA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.zhinengxing.ZhiNengXingShowA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 智能星测试类 -->
+        <activity
+            android:name=".test.activity.productshow.TestZhiNengXingShowA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 智悦人生产品演示界面 -->
+        <activity
+            android:name=".activity.productshow.zhiyuerensheng.ZhiYueRenShengA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.zhiyuerensheng.ZhiYueRenShengPlanA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.zhiyuerensheng.ZhiYueRenShengShowA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 百万任我行产品演示界面 -->
+        <activity
+            android:name=".activity.productshow.baiwanrwx.BaiWanRWXA"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.baiwanrwx.BwrwxChanpinshipin"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.baiwanrwx.BaiWanRWXPlanA"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.productshow.baiwanrwx.BaiWanRWXShowA"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- webview图片加载 -->
+
+
+        <!-- service -->
+        <service android:name=".util.NetService" />
+
+        <!-- 测试类 -->
+        <!-- test sqlite数据提取 -->
+        <activity android:name=".activity.productshow.ProductShowActivity" />
+
+        <!-- test TestShouHuXShowA -->
+        <activity android:name=".test.activity.productshow.TestShouHuXShowA" />
+
+        <!-- 测试视频 -->
+
+        <activity android:name=".test.activity.testmian.TestYouKuVideo" />
+
+        <!-- 根据url地址界面 -->
+        <activity android:name=".test.activity.testmian.TestURLActivity" />
+        <activity android:name=".test.activity.webview.URLWebView" />
+
+        <!-- 测试pdf -->
+        <activity android:name=".test.activity.testmian.TestPtfActivity" />
+
+        <!-- 百宝箱支付界面 -->
+        <activity android:name=".activity.pay.ProductPay" />
+
+        <!-- 我的客户群 -->
+        <activity android:name=".activity.group.GroupMyClientA" />
+
+        <!-- 声明Android框架和目标测试包 -->
+        <instrumentation
+            android:name="android.test.InstrumentationTestRunner"
+            android:label="hello Android Test"
+            android:targetPackage="com.baoxiao" >
+        </instrumentation>
+
+        <!-- 群 -->
+        <activity android:name=".activity.group.GroupToContactsA" >
+        </activity>
+        <activity android:name=".activity.group.GroupXqClientA" >
+        </activity>
+        <activity android:name=".activity.group.GroupMyzengyA" >
+        </activity>
+        <activity android:name=".activity.group.GroupXqZengyA" >
+        </activity>
+        <activity android:name=".activity.group.GroupXqTonghA" >
+        </activity>
+        <activity android:name=".activity.group.GroupMyTonghA" >
+        </activity>
+        <activity android:name=".activity.group.InvitationA" >
+        </activity>
+        <activity android:name=".activity.group.InvitaEditA" >
+        </activity>
+        <activity android:name=".activity.group.InvitaXqA" >
+        </activity>
+
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!-- 添加UmengAppkey -->
+        <!--
+		<meta-data
+            android:name="UMENG_APPKEY"
+            android:value="556bf20c67e58e5a97000302" />
+        -->
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".JiHuoSucceedA"
+            android:label="@string/title_activity_ji_huo_succeed" >
+        </activity>
+        <activity
+            android:name=".activity.group.GroupSearchA"
+            android:label="@string/title_activity_group_search" >
+        </activity>
+        <activity android:name=".activity.productshow.ImgAnimationA" >
+        </activity>
+        <activity
+            android:name="com.baoxiao.activity.homepage.AlterActivity"
+            android:label="@string/title_activity_alter" >
+        </activity>
+        <activity
+            android:name="com.baoxiao.activity.homepage.SynListViewImageActivity"
+            android:label="@string/title_activity_alter" >
+        </activity>
+        
+        
+                <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:theme="@style/MyDialogStyle"
+            android:exported="false">
+        </activity>
+
+        
+        
+		<activity android:name="com.baoxiao.jpush.TestActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.baoxiao" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.baoxiao" />
+            </intent-filter>
+        </service>
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+             <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.baoxiao" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+             <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/>
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name="com.baoxiao.jpush.MyReceiver"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />  
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.baoxiao" />
+            </intent-filter>
+        </receiver>
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="11585af72b33c831f2dccb60" /> <!--  </>值来自开发者平台取得的AppKey-->
+        
+        <meta-data android:name="UMENG_APPKEY" android:value="56e8c9d167e58e3ee30021c8" />
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+</manifest>

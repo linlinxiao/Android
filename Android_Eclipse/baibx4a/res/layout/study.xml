@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        
+    
+	<LinearLayout android:background="#2299EE"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="horizontal" >
+
+        <ImageView android:src="@drawable/jianjieback"
+            android:id="@+id/studyBack"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+             />
+
+        <TextView android:text="学习园地"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="6.5"
+            android:gravity="center"
+            android:textSize="20sp"
+			android:textColor="#ffffff"/>
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            />
+    	</LinearLayout>
+        
+	<ImageView android:src="@drawable/study_datu"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="5"
+	    />
+
+	 <LinearLayout 
+	   android:layout_width="match_parent" 
+	   android:layout_height="0dp"
+	   android:layout_weight="2.3"
+	   >
+        <RelativeLayout android:background="@drawable/study_shipin"
+            android:id="@+id/studyVideo" android:layout_margin="2dip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentBottom="true"
+			    android:layout_centerHorizontal="true"
+			    android:text="保险视频"
+			    android:layout_marginBottom="15dip"
+			    android:textSize="13sp"
+			    android:textColor="#ffffff"/>            
+            </RelativeLayout>
+        <RelativeLayout android:background="@drawable/study_jiqiao"
+            android:id="@+id/addMember"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            >
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentBottom="true"
+			    android:layout_centerHorizontal="true"
+			    android:text="增员技巧"
+			    android:layout_marginBottom="15dip"
+			    android:textSize="13sp"
+			    android:textColor="#ffffff"/>            
+            </RelativeLayout>
+        <RelativeLayout android:background="@drawable/study_kaituo"
+            android:id="@+id/studyZhugu" android:layout_margin="2dip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentBottom="true"
+			    android:layout_centerHorizontal="true"
+			    android:text="主顾开拓"
+			    android:layout_marginBottom="15dip"
+			    android:textSize="13sp"
+			    android:textColor="#ffffff"/>            
+            </RelativeLayout>                
+
+	    
+	 </LinearLayout>
+	
+	 <LinearLayout 
+	   android:layout_width="match_parent" 
+	   android:layout_height="0dp"
+	   android:layout_weight="2.3"
+	    >
+        <RelativeLayout android:background="@drawable/study_ziyuan"
+            android:id="@+id/studyResource" 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            >
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentBottom="true"
+			    android:layout_centerHorizontal="true"
+			    android:text="早会资源"
+			    android:layout_marginBottom="15dip"
+			    android:textSize="13sp"
+			    android:textColor="#ffffff"/>            
+            </RelativeLayout>
+        <RelativeLayout android:background="@drawable/study_yingxiaojineng"
+            android:id="@+id/studySkill" 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            >
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentBottom="true"
+			    android:layout_centerHorizontal="true"
+			    android:text="营销技能"
+			    android:layout_marginBottom="15dip"
+			    android:textSize="13sp"
+			    android:textColor="#ffffff"/>            
+            </RelativeLayout>
+        <RelativeLayout android:background="@drawable/study_jige"
+            android:id="@+id/studyZige"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            >
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentBottom="true"
+			    android:layout_centerHorizontal="true"
+			    android:text="投保资格"
+			    android:layout_marginBottom="15dip"
+			    android:textSize="13sp"
+			    android:textColor="#ffffff"/>            
+            </RelativeLayout> 
+	    
+	 </LinearLayout>	 
+
+	 <LinearLayout 
+	   android:layout_width="match_parent" 
+	   android:layout_height="0dp"
+	   android:layout_weight="2.3">
+        <RelativeLayout android:background="@drawable/study_fenxiang"
+            android:id="@+id/studyShare" 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+			android:layout_marginBottom="4dp"
+            >
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentBottom="true"
+			    android:layout_centerHorizontal="true"
+			    android:text="高手分享"
+			    android:layout_marginBottom="15dip"
+			    android:textSize="13sp"
+			    android:textColor="#ffffff"/>            
+            </RelativeLayout>
+        <RelativeLayout android:background="@drawable/study_zhishi"
+            android:id="@+id/studyKnowledge" 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:layout_marginBottom="4dp"
+            >
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentBottom="true"
+			    android:layout_centerHorizontal="true"
+			    android:text="行业知识"
+			    android:layout_marginBottom="15dip"
+			    android:textSize="13sp"
+			    android:textColor="#ffffff"/>            
+            </RelativeLayout>
+        <RelativeLayout android:background="@drawable/study_jili2"
+            android:id="@+id/studyJili" 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:layout_marginBottom="4dp"
+            >
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentBottom="true"
+			    android:layout_centerHorizontal="true"
+			    android:text="成功激励"
+			    android:layout_marginBottom="15dip"
+			    android:textSize="13sp"
+			    android:textColor="#ffffff"/>            
+            </RelativeLayout> 
+	    
+	 </LinearLayout>	 	 
+	 
+    </LinearLayout>

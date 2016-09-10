@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">平安百宝箱</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn1">点击测试获取数据库资料</string>
+    <string name="sqlitemain_item_payperoid">保 单 年 度</string>
+    <string name="sqlitemain_item_hongli">红     利</string>
+    <string name="JiBenQingKuang">被保人基本情况</string>
+    <string name="ZhongShenShouXian">守护星少儿两全保险</string>
+    <string name="ZhongDaJiBingXian">附加少儿重大疾病保险（2014）</string>
+    <string name="FenHongShuiPing">分红水平</string>
+    <string name="TopTextView">守护星保险产品组合</string>
+    <string name="FenHongShuiPing_low">低</string>
+    <string name="FenHongShuiPing_middle">中</string>
+    <string name="FenHongShuiPing_high">高</string>
+    <string name="CommitInsurancePlan">确认</string>
+    <string name="TopTextViewTwo">守护星少儿理财保障计划</string>
+    <string name="sexLabel">选择性别</string>
+    <string name="qiTaQuanYi1">其他权益：1.再保险期间可以申请保单贷</string>
+    <string name="qiTaQuanYi2">款，解决资金周转问题，手续简便</string>
+    <string name="qiTaQuanYi3">2.更多权益请参看保险条款和产品计划书。</string>
+    <string name="baoDanLeijiHongLiBaoXianJinEr">分红每年都有，让您的保险资金逐年递增</string>
+    <string name="psShouHuXTextView1">第三保单年度开始，在22岁前生存金和教育金，一共可领取金额高达保额的12%</string>
+    <string name="psShouHuXTextView2">22岁后每年按保额的6%继续领取生存金活到老，领到老</string>
+    <string name="view1_textView1">22岁后每年按保额的6%继续领取生存金活到老，领到老</string>
+    <string name="view1_textView2">第三保单年度开始，在22岁前生存金和教育金，一共可领取金额高达保额的12%</string>
+    <string name="zhongShenFenHong1">终身分红</string>
+    <string name="zhongShenFenHong2">年年分红，资产增值很快乐</string>
+    <string name="zhongShenBaoZhang1">终身保障</string>
+    <string name="zhongShenBaoZhang2">享有高额保障，家庭很快乐</string>
+    <string name="zhongShenFanHuan1">终身返还</string>
+    <string name="zhongShenFanHuan2">年年领钱 孩子一生很快乐</string>
+    <string name="tiQianYangLao1">提钱养老</string>
+    <string name="tiQianYangLao2">安享金色晚年 老年很快乐</string>
+    <string name="baoDanLeiJiShenCunJinTitle">保单累积生存金（以中等收益计算）</string>
+
+    <!-- 守护星产品下拉列表 -->
+    <string name="age">年龄(岁)</string>
+    <string name="jiaoFeiNianQi">交费年期（年）</string>
+    <string name="safePeriod">保险期限</string>
+    <string name="BaoE">保额（万）</string>
+
+    <!-- 护身福 -->
+    <!-- 1 -->
+    <string name="huShenFuJianJie">“护身福简单介绍”</string>
+    <string name="huShenFuJianJieContent">医疗费用日益高昂、通胀压力、生活物价上涨……种种因素令您不安。平安作为您可靠的伙伴，我们承诺为您提供周全的保障，本计划涵盖身故、轻症、重疾、意外赔付，让您无后顾之忧，与挚爱迈步理想人生。</string>
+    <string name="huShenFuBaoFei">护身福理财保障计划</string>
+    <string name="leiJiXiaoShou">累积销售：</string>
+    <string name="leiJiXiaoShouShuLiang">790132件</string>
+    <string name="shiHeRenQun">适合人群：18岁至55周岁成年男性、女性;</string>
+    <string name="baoXianQiXian1">保险期限：身故、重疾保障终身，</string>
+    <string name="baoXianQiXian2">意外保障至70周岁;</string>
+
+    <!-- 世纪天使 -->
+    <string name="shiJiTianShiJianJie">“世纪天使简单介绍”</string>
+    <string name="shiJiTianShiPlan">世纪天使理财保障计划</string>
+
+    <!-- 鑫利 -->
+    <string name="xinLiPlan">鑫利理财保障计划</string>
+    <!-- 鑫盛 -->
+    <string name="xinShengPlan">鑫盛理财保障计划</string>
+    <!-- 鑫详 -->
+    <string name="xinXiangPlan">鑫祥理财保障计划</string>
+    <string name="baoXianQiJian">保险期间（年）</string>
+
+    <!-- 平安福 -->
+    <string name="pingAnFuBaoFei">平安福理财保障计划</string>
+    <string name="title_activity_invita_xq">InvitaXqA</string>
+
+    <!-- 赢聚一生 -->
+    <string name="yingJuYiSheng">赢聚一生理财保障计划</string>
+    <string name="title_activity_ji_huo_succeed">JiHuoSucceedA</string>
+    <string name="title_activity_group_search">GroupSearchA</string>
+    <string name="title_activity_zun_yu_ren_sheng">ZunYuRenShengA</string>
+    <string name="title_activity_zun_yu_ren_sheng_plan">ZunYuRenShengPlanA</string>
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <string name="title_activity_alter">AlterActivity</string>
+    <string name="str_resume">确定</string>
+
+</resources>

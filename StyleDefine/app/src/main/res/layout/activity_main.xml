@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.linlin.styledefine.MainActivity">
+
+    <com.linlin.styledefine.TapBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        custom:titleText="这是标题"
+        custom:titleTextColor="@color/colorAccent"
+        custom:titleTextSize="17sp"
+        custom:leftButtonText="左边"
+        custom:leftButtonTextColor="@color/colorAccent"
+        custom:leftButtonTextSize="14sp"
+        custom:leftButtonBackgroundColor="@color/colorPrimaryDark"
+        custom:rightButtonText="右边"
+        custom:rightButtonTextColor="@color/colorAccent"
+        custom:rightButtonTextSize="14sp"
+        custom:rightButtonBackgroundColor="@mipmap/ic_launcher"
+        ></com.linlin.styledefine.TapBar>
+
+</RelativeLayout>

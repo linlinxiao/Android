@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox android:textSize="12sp"
+            android:id="@+id/cb_mycard_right_row19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="编辑页面编辑完成-19"
+            android:textColor="#000000" />
+
+        <CheckBox android:textSize="12sp"
+            android:id="@+id/cb_mycard_left_row19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="没有该项荣誉"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mycard_row19"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mycard_back"
+        android:gravity="top" >
+
+        <TextView
+            android:id="@+id/tv_p19_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="105dp"
+            android:clickable="true"
+            android:onClick="p19_t1"
+            android:text="可编辑"
+            android:textColor="#ff8d09"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_p19_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="135dp"
+            android:clickable="true"
+            android:onClick="p19_t2"
+            android:text="可编辑"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/iv_mycard_p19_v1"
+            android:layout_width="150dp"
+            android:layout_height="211dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/mycard_editer1"
+            android:clickable="true"
+            android:onClick="p19_v1" />
+
+        <ImageView
+            android:id="@+id/iv_mycard_p19_v2"
+            android:layout_width="156dp"
+            android:layout_height="82dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/iv_mycard_p19_v1"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/mycard_editer1"
+            android:clickable="true"
+            android:onClick="p19_v2" />
+
+        <ImageView
+            android:id="@+id/iv_mycard_p19_v3"
+            android:layout_width="156dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/iv_mycard_p19_v2"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mycard_editer1"
+            android:clickable="true"
+            android:onClick="p19_v3" />
+
+        <TextView
+            android:id="@+id/tv_p19_t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="p19_t3"
+            android:text="可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑可编辑"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</LinearLayout>
