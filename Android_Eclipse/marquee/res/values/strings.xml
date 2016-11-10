@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="app_name">marquee</string>
-    <string name="hello_world">我是美丽的跑马灯，我是美丽的跑马灯，我是美丽的跑马灯，我是美丽的跑马灯，我是美丽的跑马灯</string>
-    <string name="action_settings">Settings</string>
-
-</resources>

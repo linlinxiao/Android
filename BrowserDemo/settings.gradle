@@ -1,4 +1,0 @@
-include ':app'
-include ':xwalk_core_library'
-include ':crosswalkwebview'
-include ':crosswalkwebview22525614arm'

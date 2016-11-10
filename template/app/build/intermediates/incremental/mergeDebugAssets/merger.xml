@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/linlin/AndroidStudioProjects/template/app/src/main/assets"><file name="sampapp-icon-helloworld.png" path="/Users/linlin/AndroidStudioProjects/template/app/src/main/assets/sampapp-icon-helloworld.png"/></source><source path="/Users/linlin/AndroidStudioProjects/template/app/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/linlin/AndroidStudioProjects/template/app/src/debug/assets"/></dataSet></merger>
