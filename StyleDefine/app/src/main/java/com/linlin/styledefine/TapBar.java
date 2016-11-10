@@ -122,3 +122,23 @@ public class TapBar extends RelativeLayout {
         }
     }
 }
+
+if (!isEditing) { //结算的状态下
+// TODO: 9/26/16
+if (cert.IsValid) { //商品没有失效
+if (cert.HasEnoughStock) {//库存足时
+selectedCheckBox.setVisibility(View.VISIBLE);
+tvInvalide.setVisibility(View.GONE);
+} else {//库存不足
+selectedCheckBox.setVisibility(View.INVISIBLE);
+tvInvalide.setVisibility(View.GONE);
+}
+} else {//商品失效
+tvStockLow.setVisibility(View.INVISIBLE);
+selectedCheckBox.setVisibility(View.INVISIBLE);
+tvInvalide.setVisibility(View.VISIBLE);
+}
+} else { //在编辑的状态下
+selectedCheckBox.setVisibility(View.VISIBLE);
+tvInvalide.setVisibility(View.GONE);
+}

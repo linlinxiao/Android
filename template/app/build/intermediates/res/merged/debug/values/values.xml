@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_message_install_runtime_lib">Please install "Crosswalk Runtime Library" first.</string>
+    <string name="dialog_message_update_runtime_lib">Please update "Crosswalk Runtime Library" first.</string>
+    <string name="dialog_message_update_runtime_lib_warning">An update is recommended for "Crosswalk Runtime Library".</string>
+    <string name="dialog_title_install_runtime_lib">Crosswalk Runtime Library not found</string>
+    <string name="dialog_title_update_runtime_lib">Update for Crosswalk Runtime Library is required</string>
+    <string name="dialog_title_update_runtime_lib_warning">Update for Crosswalk Runtime Library is available</string>
+    <string name="download_from_store">Install From Store</string>
+    <string name="download_from_url">Direct Download</string>
+</resources>
